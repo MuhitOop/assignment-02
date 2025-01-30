@@ -264,6 +264,16 @@ main{
   .hero-description {
     text-align: center;
   }
+  .curriculum-cards{
+    flex-direction: column;
+    /* margin: 0 30px; */
+  }
+  .curriculum {
+    margin: 0 30px;
+  }
+  .curri-card{
+    padding: 0px;
+  }
 }
 /* media query for small(mobile) devices end */
 
