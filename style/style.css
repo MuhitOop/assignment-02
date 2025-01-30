@@ -17,6 +17,11 @@ nav,
   margin: 0 auto;
 }
 
+.footer{
+  max-width: 1070px;
+  margin: 0 auto;
+}
+
 header {
   background-color: rgb(247, 247, 247);
 }
@@ -25,6 +30,10 @@ main {
   background: url(/assets/bg.png),
     linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 50%);
   background-color: rgb(247, 247, 247);
+}
+
+footer {
+  background-color: #01acfd;
 }
 
 /* shared styles */
@@ -67,6 +76,9 @@ main {
   color: #111111;
 }
 
+.hidden{
+  display: none;
+}
 /* navbar style start */
 .nav-btn {
   background-color: #fea301;
@@ -271,7 +283,7 @@ main {
   border-radius: 16px 16px 0px 0px;
 }
 
-.story-card-info{
+.story-card-info {
   padding: 30px;
 }
 
@@ -303,62 +315,111 @@ main {
   color: #666666;
 }
 
-.story-card-right{
-    width: 290px;
-    height: 300px;
-    border-radius: 16px;
-    background-color: #ffffff;
+.story-card-right {
+  width: 290px;
+  height: 300px;
+  border-radius: 16px;
+  background-color: #ffffff;
 }
 
-.story-card-img-right img{
-    width: 100%;
-    border-radius: 16px 16px 0px 0px;;
+.story-card-img-right img {
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
 }
 
-.story-card-container-right{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+.story-card-container-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
-.story-card-info-right .story-date{
-    border: none;
-    border-radius:48px;
-    background-color: #95B226;
-    font-family: "Raleway", serif;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #ffffff;
-    padding: 10px 20px;
-    position: relative;
-    top: -25px;
-    left: 40px;
+.story-card-info-right .story-date {
+  border: none;
+  border-radius: 48px;
+  background-color: #95b226;
+  font-family: "Raleway", serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 10px 20px;
+  position: relative;
+  top: -25px;
+  left: 40px;
 }
 
-.story-card-info-right #story-3{
-    background-color: #5D58F0;
+.story-card-info-right #story-3 {
+  background-color: #5d58f0;
 }
 
-.story-card-info-right .story-title{
-    width: 200px;
-    margin: 0 auto;
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 28.76px;
+.story-card-info-right .story-title {
+  width: 200px;
+  margin: 0 auto;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 28.76px;
 }
 
-.story-btn-container{
-    text-align: center;
+.story-btn-container {
+  text-align: center;
 }
 
-.story-btn{
-    background-color: #111111;
+.story-btn {
+  background-color: #111111;
 }
 /* stories section styles end */
 
 /* main section styles end */
 
-/* footer section styles */
+/* footer section styles start */
+.footer{
+  padding: 130px;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+.last-name{
+  width: 400px;
+}
+
+.last-name .last-name-description{
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.footer-logo {
+  display: flex;
+  margin-bottom: 36px;
+}
+
+.footer-logo h1{
+  font-size: 2.625rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.footer-title{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.about-scl-links ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 32px;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.keep-in .social{
+  display: flex;
+  gap: 10px;
+  margin-top: 32px;
+}
+/* footer section style end */
 
 /* media query start */
 
@@ -371,7 +432,8 @@ main {
 
   .title-name,
   .nav-links,
-  .nav-btn {
+  .nav-btn,
+  .story-card-container-left {
     display: none;
   }
   .hero-section {
@@ -398,6 +460,69 @@ main {
   }
   .curri-card {
     padding: 0px;
+  }
+  .story-card-right {
+    width: 173px;
+    height: 180px;
+  }
+
+  .stories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stories-title {
+    margin-bottom: 0;
+  }
+
+  .story-card-container {
+    width: auto;
+    height: auto;
+    padding: 20px 0;
+    margin: 0;
+  }
+
+  .story-card-info-right .story-date {
+    border: none;
+    border-radius: 48px;
+    background-color: #95b226;
+    font-family: "Raleway", serif;
+    font-size: 0.5625rem;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 10px 20px;
+    position: relative;
+    top: -20px;
+    left: 25px;
+  }
+
+  .story-card-info .story-title {
+    margin-bottom: 0;
+  }
+
+  .story-card-info-right .story-title {
+    width: 113px;
+    margin: 0 auto;
+    font-size: 0.5625rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  .footer{
+    flex-direction: column;
+    padding: 65px 20px;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .last-name{
+    width: 360px;
+  }
+
+  .navbar img{
+    display: block;
+    margin-right: 20px;
   }
 }
 /* media query for small(mobile) devices end */
