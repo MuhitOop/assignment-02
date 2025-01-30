@@ -267,6 +267,7 @@ main{
   .curriculum-cards{
     flex-direction: column;
     /* margin: 0 30px; */
+    align-items: center;
   }
   .curriculum {
     margin: 0 30px;
