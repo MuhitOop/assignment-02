@@ -388,6 +388,7 @@ footer {
 }
 .footer-logo {
   display: flex;
+  gap: 15px;
   margin-bottom: 36px;
 }
 
